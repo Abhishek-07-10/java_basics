@@ -1,10 +1,4 @@
-/* Variable Types
-   String --> ex:- "hello" , "HII"
-   int --> ex:- all digtis
-   float --> ex:- decimal digits
-   char --> ex:- alphabets or digts in 'a' || 'A'
-   boolean --> ex:- conditions are if True || False. 
-*/
+
 public class Variable
 {
 	public static void main(String[] args) {
