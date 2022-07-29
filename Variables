@@ -1,0 +1,25 @@
+/* Variable Types
+   String --> ex:- "hello" , "HII"
+   int --> ex:- all digtis
+   float --> ex:- decimal digits
+   char --> ex:- alphabets or digts in 'a' || 'A'
+   boolean --> ex:- conditions are if True || False. 
+*/
+public class Variable
+{
+	public static void main(String[] args) {
+	    String newStr = "hello this is string examples";
+	    int newInt = 100;
+	    float newFloat = 12.99f;
+	    char newChar = 'A';
+	    boolean newBool1 = 100<9;
+	    boolean newBool2 = 100>9;
+	    
+		  System.out.println(newStr);
+		  System.out.println(newInt);
+		  System.out.println(newFloat);
+		  System.out.println(newChar);
+	  	System.out.println(newBool1);
+	  	System.out.println(newBool2);
+	} 
+}
