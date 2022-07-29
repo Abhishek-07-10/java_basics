@@ -1,0 +1,16 @@
+import java.util.*;
+
+public class ConvertChar_to_UpperLower
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+      
+	    char ch1 = scan.next().charAt(0);
+	    char ch2 = scan.next().charAt(0);
+      
+	    System.out.println(Character.toUpperCase(ch1)); // will convert the alphabet to uppercase.
+      
+	    System.out.println(Character.toLowerCase(ch2)); // will convert the alphabet to lowercase.
+	    
+	}
+}
