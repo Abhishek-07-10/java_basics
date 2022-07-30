@@ -1,0 +1,20 @@
+public class TribonacciSeries 
+{
+
+    public static void main(String[] args) {
+        
+        int n = 10, fTerm=0, sTerm=0, tTerm=1;
+        
+        for(int i=1; i<=n; i++){
+            
+            System.out.print(fTerm+" ");
+            
+            int nTerm = fTerm + sTerm+ tTerm;
+            
+            fTerm = sTerm;
+            sTerm = tTerm;
+            tTerm = nTerm;
+        }
+        
+    }
+}
