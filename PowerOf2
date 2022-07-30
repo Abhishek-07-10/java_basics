@@ -1,0 +1,17 @@
+public class PowerOf2 
+{
+
+    public static void main(String[] args) {
+        
+        int n = 4, multiplier=1;
+        
+        for(int i = 1; i <= n; i++){
+        
+            multiplier *=2;
+            
+        }
+        
+        System.out.println(multiplier);
+        
+    }
+}
