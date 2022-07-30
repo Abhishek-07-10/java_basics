@@ -1,0 +1,19 @@
+public class FibonacciSeries
+{
+	public static void main(String[] args) {
+  
+	   int n = 10, fTerm=0, secTerm=1;
+	   
+	   for(int i = 1; i<=n; i++){
+     
+	       System.out.print(fTerm + " ");
+	       
+	       int nTerm = fTerm+secTerm;
+         
+	       fTerm = secTerm;
+         
+	       secTerm = nTerm;
+	       
+	   }
+	}
+}
