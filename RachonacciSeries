@@ -1,0 +1,17 @@
+public class RachonacciSeries {
+
+    public static void main(String[] args) {
+
+int f = 3, s = 4, t = 5, ft = 6;
+        for(int i =1; i<n ; i++){
+           // System.out.println(f);
+            int nt = f+(2*s)+(3*t)+(4*ft)+5;
+            f=s;
+            s=t;
+            t=ft;
+            ft=nt;
+            
+        }
+        System.out.println(f);
+    }
+}
