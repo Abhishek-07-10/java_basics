@@ -1,0 +1,38 @@
+
+import java.math.*;
+
+public class Main {
+    public static int Armstrong(int x, int y){
+    
+        for(int i = x ; i <= y ; i++){
+        
+            int n1, sum = 0, rem;
+            
+            n1 = i;
+            
+            while(n1!=0){
+            
+                rem = n1%10;
+                
+                sum += Math.pow(rem,3);
+                
+                n1/=10;
+                
+            }
+            
+            if(sum == i)
+            
+                System.out.println(i); 
+                
+        }
+        return 0;
+    }
+    
+    // Driver code.
+    public static void main(String[] args) {
+        
+        int num1 = 1;
+        int num2 = 500;
+        Armstrong(num1, num2);
+    }
+}
