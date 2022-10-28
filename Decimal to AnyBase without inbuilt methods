@@ -1,0 +1,65 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+
+public class Solution {
+    public static String binary(String s){
+        String a = "";
+        int n = Integer.parseInt(s);
+        while(n > 0){
+            if(n%2 != 0){
+                a = 1 + a;
+            }else{
+                a = 0 + a;
+            }
+            n /= 2;
+        }
+        return a;
+    }
+    
+    public static String sernary(String s){
+        int ans = Integer.parseInt(s);
+        int octal = 0;
+        while(ans > 0){
+            octal = octal*10 + ans%6;
+            ans = ans/6;
+        }
+        
+        int revOctal = 0;
+        while(octal > 0){
+            revOctal = revOctal*10 + octal%10;
+            octal = octal/10;
+        }
+        return revOctal+"";
+    }
+    
+    public static String hexadecimal(String s){
+        String ans = "";
+        int n = Integer.parseInt(s);
+        while(n > 0){
+            if(n % 16 > 9){
+                ans += ""+(char)((n%16)+55);
+            }else{
+                ans += n % 16;
+            }
+            n = n/16;
+        }
+        String a = "";
+        for(int i = ans.length()-1 ; i >= 0 ; i--){
+            a += ans.charAt(i);
+        }
+        return a;
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.next();
+        int n = sc.nextInt();
+        if(n == 6) System.out.println(sernary(s));
+        else if(n == 16) System.out.println(hexadecimal(s));
+        else System.out.println(binary(s));
+        //System.out.println(binary(s));
+    }
+}
